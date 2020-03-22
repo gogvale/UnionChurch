@@ -1,9 +1,13 @@
-{% for item in site.data.social_media %}
-{% assign icon = {{item.name | downcase}}%}
-<a style="color: {{site.social[icon]}}; font-size:2em;" class="btn btn-group" target="_blank" rel="noreferrer noopener" href="{{item.link}}">
-  <i title="{{item.name}}" class="{{item.class}}">  </i>
-</a>
-{% endfor %}
+{% for item in site.data.social_media %} 
+  {% assign icon = {{item.name | downcase}}%}
+  <a
+    style="color: {{site.social[icon]}}; font-size:2em;"
+    class="btn btn-group"
+    target="_blank"
+    rel="noreferrer noopener"
+    href="{{item.link}}"
+  >
+    <i title="{{item.name}}" class="{{item.class}}"> </i>
+  </a>
+{% endfor %} 
 
-
-{{site.social[item.name | downcase] }}
