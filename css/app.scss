@@ -52,3 +52,26 @@ $google: #dd4b39 !default;
 .container{
 	padding-top: 2em;
 }
+
+/* Container needed to position the button. Adjust the width as needed */
+.banner {
+	position: relative;
+	width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .banner img {
+	width: 100%;
+	height: 30em;
+  }
+  
+  /* Style the button and place it in the middle of the banner/image */
+  .banner .btn {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	
+  }
+  
