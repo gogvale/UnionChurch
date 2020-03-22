@@ -4,17 +4,22 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-{% include head.html %}
-	
-	<body>
-		<!--[if lt IE 8]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-				
-		{{ content }}
-		
-	</body>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
-
