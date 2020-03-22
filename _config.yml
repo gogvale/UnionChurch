@@ -14,3 +14,13 @@ exclude:
 - node_modules
 - gruntfile.js
 - package.json
+
+social:
+  twitter: '#78cdf0'
+  facebook: '#537bbd'
+  messenger: '#537bbd'
+  instagram: '#517fa4'
+  youtube: '#d34836'
+  snapchat: '#fffc00'
+  pinterest:	'#cb2027'
+  google: '#dd4b39'
