@@ -43,7 +43,10 @@ $google: #dd4b39 !default;
 	min-height: 90vh;
 }
 #footer{
-	height: 10vh;
+	min-height: 10vh;
+	#header{
+		width: 100%;
+	}
 }
 
 .container{
