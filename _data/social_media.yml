@@ -1,12 +1,12 @@
 - name: Youtube
   link: https://www.youtube.com/channel/UCuAVTw32s8DJiAE00ALKDfw
-  class:
+  class: fa fa-youtube
 - name: Instagram
   link: https://www.instagram.com/explore/locations/276669385/union-church-of-monterrey?hl=es
-  class:
+  class: fa fa-instagram
 - name: Facebook
   link: https://www.facebook.com/pg/UnionChurchMonterrey/
-  class:
+  class: fa fa-facebook
 - name: Messenger
   link: https://m.me/UnionChurchMonterrey
-  class:
+  class: fa fa-comment
