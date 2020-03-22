@@ -1,19 +1,20 @@
 # Site settings
-title: My Little Website
-tagline: "Changing the world, one uninspired quote at a time"
+title: Union Church of Monterrey
+tagline: >-
+  We are an intentionally Biblical, interdenominational, international Church with English as our primary worship language.
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
-facebook: fbusername
-twitter: twusername
-github: ghusername
-googleplus: gusername
-instagram: igusername
+facebook: UnionChurchMonterrey
+twitter:
+github: gogvale
+googleplus:
+instagram: union-church-of-monterrey
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+phone: +52 81 8346 0541
+email: unionchurchmty@gmail.com
 
 # Use this for production
 #sass:
