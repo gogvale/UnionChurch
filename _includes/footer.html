@@ -1,5 +1,6 @@
-{% for item in site.data.social_media %} 
-  {% assign icon = {{item.name | downcase}}%}
+<div id="footer" class="bg-light">
+  {% for item in site.data.social_media %} {% assign icon = {{item.name |
+  downcase}}%}
   <a
     style="color: {{site.social[icon]}}; font-size:2em;"
     class="btn btn-group"
@@ -9,5 +10,5 @@
   >
     <i title="{{item.name}}" class="{{item.class}}"> </i>
   </a>
-{% endfor %} 
-
+  {% endfor %}
+</div>
