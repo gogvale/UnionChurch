@@ -2,21 +2,47 @@
   id="footer"
   class="bg-light text-center py-3 row justify-content-md-center"
 >
-  <div class="col-12 col-md-3">
+  <div class="col-12 col-md-2">
+    <hr />
+    <h4>About Us</h4>
+    <hr />
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore
-      laborum nostrum laudantium suscipit officiis veritatis maiores,
-      voluptatibus, tenetur nihil maxime quis vero nesciunt alias saepe ratione
-      atque, officia expedita!
+      An evangelical, inter-denominational, international church with an
+      English-speaking community with simultaneous translation into Spanish for
+      our Worship Services.
     </p>
   </div>
-  <div id="social-media" class="col-12 col-md-3">
+  <div class="col-12 col-md-2">
+    <hr />
+    <h4>Contact Us</h4>
+    <hr />
+    <p>
+      <a href="tel:{{site.phone}}">
+        <i class="fa fa-phone"></i>
+        {{site.phone}}
+      </a>
+    </p>
+    <p>
+      <a target="_blank" rel="noreferrer noopener" href="{{site.gmaps_link}}">
+        <i class="fa fa-map-marker"></i>
+        {{site.address}}</a
+      >
+    </p>
+    <p>
+      <a target="_blank" rel="noreferrer noopener" href="mailto:{{site.email}}">
+        <i class="fa fa-envelope"></i>
+        {{site.email}}
+      </a>
+    </p>
+  </div>
+  <div id="social-media" class="col-12 col-md-2">
+    <hr />
     <h4>Follow Us on Social Media!</h4>
-
+    <hr />
     {% for item in site.data.social_media %} {% assign icon = {{item.name |
     downcase}}%}
     <a
-      style="color: {{site.social[icon]}}; font-size:2em;"
+      style="color:{{site.social[icon]}};"
       class="btn btn-group"
       target="_blank"
       rel="noreferrer noopener"
