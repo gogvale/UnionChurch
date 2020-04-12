@@ -1,16 +1,29 @@
-<div id="footer" class="bg-light text-center py-3">
-<h4>Follow Us on Social Media!</h4>
+<div
+  id="footer"
+  class="bg-light text-center py-3 row justify-content-md-center"
+>
+  <div class="col-12 col-md-3">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore
+      laborum nostrum laudantium suscipit officiis veritatis maiores,
+      voluptatibus, tenetur nihil maxime quis vero nesciunt alias saepe ratione
+      atque, officia expedita!
+    </p>
+  </div>
+  <div id="social-media" class="col-12 col-md-3">
+    <h4>Follow Us on Social Media!</h4>
 
-  {% for item in site.data.social_media %} {% assign icon = {{item.name |
-  downcase}}%}
-  <a
-    style="color: {{site.social[icon]}}; font-size:2em;"
-    class="btn btn-group"
-    target="_blank"
-    rel="noreferrer noopener"
-    href="{{item.link}}"
-  >
-    <i title="{{item.name}}" class="{{item.class}}"> </i>
-  </a>
-  {% endfor %}
+    {% for item in site.data.social_media %} {% assign icon = {{item.name |
+    downcase}}%}
+    <a
+      style="color: {{site.social[icon]}}; font-size:2em;"
+      class="btn btn-group"
+      target="_blank"
+      rel="noreferrer noopener"
+      href="{{item.link}}"
+    >
+      <i title="{{item.name}}" class="{{item.class}}"> </i>
+    </a>
+    {% endfor %}
+  </div>
 </div>
