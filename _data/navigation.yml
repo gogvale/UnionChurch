@@ -1,24 +1,24 @@
 - title: About Us
-  url: about-us.html
+  url: /pages/about-us.html
 
 - title: Services
-  url: services.html
+  url: /pages/services.html
 
 - title: Ministries
-  url: ministries.html
+  url: /pages/ministries.html
 
 - title: Events
-  url: events.html
+  url: /pages/events.html
 
 - title: Contact Us
-  url: contact-us.html
+  url: /pages/contact-us.html
 
 - title: Bodas y más
-  url: bodas.html
+  url: /pages/bodas.html
   sublinks:
     - title: Recién Comprometidos
-      url: comprometidos.html
+      url: /pages/bodas/comprometidos.html
     - title: Planeando tu Cerimonia
-      url: cerimonia.html
+      url: /pages/bodas/cerimonia.html
     - title: Invitados y Roles
-      url: invitados.html
+      url: /pages/bodas/invitados.html
