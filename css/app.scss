@@ -43,6 +43,7 @@ $google: #dd4b39 !default;
 
 #content{
 	min-height: 60vh;
+	padding-top: 2em;
 }
 #footer{
 	min-height: 10vh;
@@ -51,9 +52,6 @@ $google: #dd4b39 !default;
 	}
 }
 
-.container{
-	padding-top: 2em;
-}
 
 /* Container needed to position the button. Adjust the width as needed */
 .banner {
