@@ -6,7 +6,7 @@
   <title>
     {%if page.title %} {{page.title}} | {% endif %}{{ site.title }}
   </title>
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png" />
+  <link rel="icon" type="image/png" href="{{ site.base_url }}/favicon.png" />
 
   <!-- Auto-generated meta fields (SEO) -->
   {% seo %}
@@ -29,7 +29,7 @@
     name="twitter:description"
     content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}"
   />
-  <meta name="twitter:image" content="{{site.url}}{{site.socialimg}}" />
+  <meta name="twitter:image" content="{{site.base_url}{{site.socialimg}}" />
   <meta name="twitter:url" content="{{site.url}}{{page.url}}" />
 
   <!-- CSS & fonts -->
@@ -57,5 +57,5 @@
     crossorigin="anonymous"
   ></script>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/app.css" />
+  <link rel="stylesheet" href="{{ site.base_url }}/css/app.css" />
 </head>
