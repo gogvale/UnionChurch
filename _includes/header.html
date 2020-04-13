@@ -1,34 +1,87 @@
+<!-- Activates dropdown on hover -->
+<!-- https://www.tutorialrepublic.com/faq/how-to-open-bootstrap-dropdown-menu-on-hover-rather-than-click.php -->
+
+<style type="text/css">
+  @media screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu,
+    .btn-group:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    .dropdown-toggle {
+      margin-bottom: 2px;
+    }
+
+    .navbar .dropdown-toggle,
+    .nav-tabs .dropdown-toggle {
+      margin-bottom: 0;
+    }
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".dropdown, .btn-group").hover(function () {
+      var dropdownMenu = $(this).children(".dropdown-menu");
+      if (dropdownMenu.is(":visible")) {
+        dropdownMenu.parent().toggleClass("open");
+      }
+    });
+  });
+</script>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="{{ site.baseurl }}">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}/img/social.png" alt="Home Page" />
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        {%for item in site.data.navigation%}
-        {%if item.sublinks  %}
+        {%for item in site.data.navigation%} {%if item.sublinks %}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{item.url}}" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a
+            class="nav-link dropdown-toggle"
+            href="{{ site.baseurl }}{{item.url}}"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             {{item.title}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             {%for link in item.sublinks%}
-            <a class="dropdown-item" href="{{ site.baseurl }}{{link.url}}">{{link.title}}</a>
+            <a class="dropdown-item" href="{{ site.baseurl }}{{link.url}}"
+              >{{link.title}}</a
+            >
             {%endfor%}
           </div>
         </li>
         {%else%}
         <li class="nav-item active">
-          <a class="nav-link {%if page.url == item.link%}active{%endif%}" href="{{ site.baseurl }}{{item.url}}">{{item.title}}
-            {%if page.url == item.link%}<span class="sr-only">(current)</span>{%endif%}</a>
+          <a
+            class="nav-link {%if page.url == item.link%}active{%endif%}"
+            href="{{ site.baseurl }}{{item.url}}"
+            >{{item.title}} {%if page.url == item.link%}<span class="sr-only"
+              >(current)</span
+            >{%endif%}</a
+          >
         </li>
-        {%endif%}
-        {%endfor%}
+        {%endif%} {%endfor%}
       </ul>
     </div>
   </div>
