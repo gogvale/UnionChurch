@@ -1,13 +1,33 @@
+<style>
+  .carousel-inner img{
+    max-height: 70vh;
+  }
+  .carousel-content {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+</style>
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="..." alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
+        <img class="d-block w-100" src="{{site.baseurl}}/assets/bannerBackground.jpg" alt="First slide">
+        <div class="carousel-content">
+          <h1 class="display-3 text-center">
+          AN INTERNATIONAL COMMUNITY OF FAITH
+        </h1>
+        </div>
+        <div class="carousel-caption lead">
+          <p>FOR ALL WHO
+            BELIEVE IN LOVING AND SERVING CHRIST..
+            THROUGH THE POWER OF THE HOLY SPIRIT...
+            AND THE FELLOWSHIP OF THE CHURCH</p>
+        </div>
       </div>
     </div>
   </div>
+
+
