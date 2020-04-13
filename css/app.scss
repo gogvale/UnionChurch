@@ -7,10 +7,10 @@ None of these variable are being imported anywhere, they're just here for your c
 *******
 */
 
-body{
-	margin: 0;
-	max-width: 100%;
-	overflow-x: hidden;
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 // Some Style Variables
@@ -38,47 +38,47 @@ $facebook: #537bbd !default;
 $instagram: #517fa4 !default;
 $youtube: #d34836 !default;
 $snapchat: #fffc00 !default;
-$pinterest:	#cb2027 !default;
+$pinterest: #cb2027 !default;
 $google: #dd4b39 !default;
 
-#content{
-	min-height: 60vh;
-	padding-top: 2em;
+#content {
+  min-height: 60vh;
+  padding-top: 2em;
 }
-#footer{
-	min-height: 10vh;
-	#header{
-		width: 100%;
-	}
+#footer {
+  min-height: 10vh;
+  #header {
+    width: 100%;
+  }
 }
-
 
 /* Container needed to position the button. Adjust the width as needed */
 .banner {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 30em;
   }
-  
-  /* Make the image responsive */
-  .banner img {
-	width: 100%;
-	height: 30em;
+  .btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
-  
-  /* Style the button and place it in the middle of the banner/image */
-  .banner .btn {
-	position: absolute;
-	bottom: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	
+}
+
+/* Style the button and place it in the middle of the banner/image */
+
+a {
+  color: black;
+  .nav-link {
+    font-size: 1.3em;
   }
-  a{
-	  color: black;
-  }
-  i.fa {
-	font-size:2em;
-	margin-right: 5px;
-  }
-  
+}
+
+i.fa {
+  font-size: 2em;
+  margin-right: 5px;
+}
