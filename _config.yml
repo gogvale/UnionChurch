@@ -31,3 +31,4 @@ social:
   - jekyll-sitemap
   - jekyll-seo-tag
   - github-pages
+theme: jekyll-theme-minimal
