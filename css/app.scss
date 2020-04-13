@@ -44,7 +44,9 @@ $google: #dd4b39 !default;
 #content {
   min-height: 60vh;
   padding-top: 2em;
-  font-size: 1.3em;
+  .bigger-font{
+    font-size: 1.3em;
+  }
 }
 #footer {
   min-height: 10vh;
@@ -72,7 +74,7 @@ $google: #dd4b39 !default;
 
 /* Style the button and place it in the middle of the banner/image */
 
-a {
+#footer a {
   color: black;
   &.nav-link {
     font-size: 1.3em;
