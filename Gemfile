@@ -8,8 +8,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll"
 
 group :jekyll_plugins do
-    gem 'jekyll-sitemap'
-    gem 'jekyll-feed'
-    gem 'jekyll-seo-tag'
-    gem 'github-pages'
+  gem 'github-pages'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
 end
