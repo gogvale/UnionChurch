@@ -27,7 +27,7 @@ social:
   google: '#dd4b39'
 
 
-  plugins:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
