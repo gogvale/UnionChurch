@@ -8,7 +8,7 @@ socialimg: "/img/social.jpg"
 gmaps_link: https://bit.ly/MapsUnionChurch
 phone: "+52 81 8346 0541"
 email: UnionChurchMty@gmail.com
-address: Oscar F. Castillón 200 Colonia Chepevera Monterrey, Nuevo León, México
+address: "Oscar F. Castillón #200, Col. Chepevera, Monterrey, N.L., México"
 exclude:
 - ".scss"
 - README.md
