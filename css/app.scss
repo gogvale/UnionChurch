@@ -11,6 +11,7 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  font-size: 20px;
 }
 
 // Some Style Variables
@@ -88,4 +89,8 @@ i.fa {
 
 .section{
   margin: 4em 0;
+}
+
+.navbar-brand img{
+  height: 5pc;
 }
