@@ -12,6 +12,10 @@ excerpt: The oportunity to serve is everywhere. Meet the institutions we've been
     background-image: url("{{site.baseurl}}/assets/ministries/golden-grain-5995_1.jpg");
     background-size: cover;
   }
+  img.card-img-top {
+    height: 4em;
+    width: 4em;
+  }
 </style>
 <div class="jumbotron bg-dark text-light text-center section">
   <h1 class="display-4 py-3">Ministries</h1>
@@ -36,7 +40,7 @@ excerpt: The oportunity to serve is everywhere. Meet the institutions we've been
   <div class="col-1 mx-auto">
     <hr />
   </div>
-  <div class="col-6 mx-auto">
+  <div class="col col-md-6 mx-auto">
     <p>
       The <b>Union Church</b> reaches out to various ministries within the
       metropolitan area of Monterrey, supporting them with prayer and financial
@@ -49,12 +53,72 @@ excerpt: The oportunity to serve is everywhere. Meet the institutions we've been
       for the homes and deliver the gifts.
     </p>
   </div>
-  <div class="section">
+  <div class="row py-3 mx-auto d-none d-lg-inline-flex">
     {% for i in (1..5)%}
-    <img
-      src="{{site.baseurl}}/assets/ministries/pic{{i}}.jpg"
-      alt="stock photo"
-    />
+    <div class="col-12 col-md">
+      <img
+        class="img-fluid"
+        src="{{site.baseurl}}/assets/ministries/pic{{i}}.jpg"
+        alt="stock photo"
+      />
+    </div>
     {% endfor%}
+  </div>
+</div>
+
+<div
+  class="section d-flex flex-wrap justify-content-center align-items-center text-center"
+>
+  <div>
+    <div class="col">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img
+          src="{{site.baseurl}}/assets/ministries/heartHandshake.svg"
+          class="card-img-top mx-auto my-4"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">BECOME A VOLUNTEER</h5>
+          <hr />
+          <p class="card-text">
+            If you would like to become a volunteer with the church just click
+            the link below and we'll get in touch with you.
+          </p>
+          <a href="mailto:unionchurchmty@gmail.com?subject=I%20want%20to%20become%20a%20volunteer"
+            >Read More »</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img
+      class="img-fluid d-none d-lg-block px-4 mx-4"
+      style="filter: opacity(0.1);"
+      src="{{site.baseurl}}/assets/ministries/uc.png"
+      alt="UC Logo"
+    />
+  </div>
+  <div>
+    <div class="col">
+      <div class="card mx-auto" style="width: 18rem;">
+        <img
+          src="{{site.baseurl}}/assets/ministries/hands-holding-heart.svg"
+          class="card-img-top mx-auto my-4"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">HOW YOU CAN HELP</h5>
+          <hr />
+          <p class="card-text">
+            Contact us if you want to financialy help any cause and we'll gladly
+            talk with you to answer any questions you might have.
+          </p>
+          <a href="mailto:unionchurchmty@gmail.com?subject=I%20want%20to%20help%20you"
+            >Read More »</a
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </div>
