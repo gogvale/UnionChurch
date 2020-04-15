@@ -19,7 +19,8 @@ excerpt: The oportunity to serve is everywhere. Meet the institutions we've been
     There are many ministry opportunities in Monterrey. The church is currently
     involved with many projects to help the community in need.
     <br />
-    Assistance can include both financial and volunteer service, and some of these groups are:
+    Assistance can include both financial and volunteer service, and some of
+    these groups are:
   </p>
   <ul class="pt-3">
     <li>El Rancho del Rey</li>
@@ -33,20 +34,27 @@ excerpt: The oportunity to serve is everywhere. Meet the institutions we've been
 <div class="container text-center my-3">
   <h1>We need your help</h1>
   <div class="col-1 mx-auto">
-      <hr>
+    <hr />
   </div>
-    <div class="col-6 mx-auto">
-      
-      <p>
-        The <b>Union Church</b> reaches out to various ministries within the
-        metropolitan area of Monterrey, supporting them with prayer and
-        financial gifts.
-      </p>
-      <p>
-        The <b>Women’s Guild</b> sponsors the annual <b>Angel Tree</b>. The tree
-        has the names of children from several of the children’s homes. Members
-        take the names to purchase a gift. Guild members plan Christmas parties
-        for the homes and deliver the gifts.
-      </p>
+  <div class="col-6 mx-auto">
+    <p>
+      The <b>Union Church</b> reaches out to various ministries within the
+      metropolitan area of Monterrey, supporting them with prayer and financial
+      gifts.
+    </p>
+    <p>
+      The <b>Women’s Guild</b> sponsors the annual <b>Angel Tree</b>. The tree
+      has the names of children from several of the children’s homes. Members
+      take the names to purchase a gift. Guild members plan Christmas parties
+      for the homes and deliver the gifts.
+    </p>
+  </div>
+  <div class="section">
+    {% for i in (1..5)%}
+    <img
+      src="{{site.baseurl}}/assets/ministries/pic{{i}}.jpg"
+      alt="stock photo"
+    />
+    {% endfor%}
   </div>
 </div>
